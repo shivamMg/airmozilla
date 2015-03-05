@@ -45,6 +45,7 @@ urlpatterns = patterns(
         r'(?P<format_type>webm|mp4)/?$',
         cache_page(60 * 60)(views.EventsFeed()),
         name='channel_feed_format_type'),
+    url(r'^about/$', views.about, name='about'),
     url(r'^tagcloud/$', views.tag_cloud, name='tag_cloud'),
     url(r'^videoredirector/$', views.videoredirector, name='videoredirector'),
     url(r'^livehits/(?P<id>\d+)/$',

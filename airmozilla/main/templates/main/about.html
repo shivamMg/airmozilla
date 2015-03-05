@@ -1,0 +1,17 @@
+{% extends 'main/main_base.html' %}
+{% set page='about' %}
+
+{% block page_title %}
+About | {{ super() }}
+{% endblock %}
+
+{% block site_css %}
+{{ super() }}
+{% endblock %}
+
+{% block content_main %}
+  <h2 class="section-title">About</h2>
+  <div class="about">
+    Air Mozilla is the Internet multimedia presence of Mozilla, with live and pre-recorded shows, interviews, news snippets, tutorial videos, and features about the Mozilla community.
+  </div>
+{% endblock %}

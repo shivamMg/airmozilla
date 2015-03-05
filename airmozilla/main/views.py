@@ -1032,6 +1032,9 @@ def channels(request):
     }
     return render(request, 'main/channels.html', data)
 
+def about(request):
+    context = {}
+    return render(request, 'main/about.html', context)
 
 def calendars(request):
     data = {}
@@ -1100,7 +1103,6 @@ def tag_cloud(request, THRESHOLD=1):
 def calendar(request):
     context = {}
     return render(request, 'main/calendar.html', context)
-
 
 @json_view
 def calendar_data(request):
